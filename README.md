@@ -481,3 +481,12 @@ If you find this tool useful, please consider:
 ---
 
 **Made with ❤️ by the community**
+
+## 📦 Publishing
+
+For information about publishing this package to PyPI, see [PUBLISHING.md](./PUBLISHING.md).
+
+The project is configured with:
+- Automated GitHub Actions workflow for PyPI publishing
+- Trusted Publishers (OpenID Connect / OIDC) for secure, credential-free authentication
+- Comprehensive publishing guide with setup instructions and troubleshooting
