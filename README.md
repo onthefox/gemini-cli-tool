@@ -272,10 +272,11 @@ export GEMINI_TEMPERATURE="0.5"
 
 ### Available Models
 
-- `gemini-2.0-flash` ⚡ (Fast, efficient, default)
-- `gemini-2.0-pro` 🧠 (More capable, better reasoning)
-- `gemini-1.5-pro` 📚 (Extended context window)
-
+- `gemini-3.0-pro` 🏆 (Most powerful, best reasoning - Nov 2025 release)
+- `gemini-2.5-pro` 🧠 (Advanced reasoning, multimodal, coding)
+- `gemini-2.5-flash` ⚡ (Fast & efficient, ideal for everyday tasks - default)
+- `gemini-2.0-flash` 💨 (Optimized speed, strong performance)
+- `gemini-1.5-pro` 📚 (Extended 1M token context window)
 ---
 
 ## 💡 Examples
