@@ -4,25 +4,29 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gemini-cli-tool"
-version = "0.1.0"
+version = "0.2.0"
 description = "Advanced AI-powered CLI tool for code analysis using Gemini"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
-authors = [{name = "OnTheFox", email = "dev@github.com"}]
-keywords = ["gemini", "ai", "cli", "code-analysis", "code-generation"]
-
+authors = [{name = "OnTheFox", email = "onthefox@users.noreply.github.com"}]
+keywords = ["gemini", "ai", "cli", "code-analysis", "code-generation", "llm"]
 classifiers = [
     "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
 ]
-
 dependencies = [
     "google-generativeai>=0.4.0",
     "click>=8.0.0",
@@ -31,12 +35,20 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0", "black>=23.0", "ruff>=0.1.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+]
+test = ["pytest>=7.0", "pytest-cov>=4.0"]
 
 [project.urls]
 Homepage = "https://github.com/onthefox/gemini-cli-tool"
 Repository = "https://github.com/onthefox/gemini-cli-tool.git"
 Issues = "https://github.com/onthefox/gemini-cli-tool/issues"
+Documentation = "https://github.com/onthefox/gemini-cli-tool#readme"
 
 [project.scripts]
 gemini-cli-tool = "gemini_cli_tool.cli:main"
@@ -46,7 +58,19 @@ packages = ["gemini_cli_tool"]
 
 [tool.black]
 line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
 
 [tool.ruff]
 line-length = 100
 target-version = "py38"
+select = ["E", "F", "W", "C", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=gemini_cli_tool --cov-report=term-missing"
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
