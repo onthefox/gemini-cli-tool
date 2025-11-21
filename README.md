@@ -275,9 +275,7 @@ export GEMINI_TEMPERATURE="0.5"
 - `gemini-3.0-pro` 🏆 (Most powerful, best reasoning - Nov 2025 release)
 - `gemini-2.5-pro` 🧠 (Advanced reasoning, multimodal, coding)
 - `gemini-2.5-flash` ⚡ (Fast & efficient, ideal for everyday tasks - default)
-- `gemini-2.0-flash` 💨 (Optimized speed, strong performance)
-- `gemini-1.5-pro` 📚 (Extended 1M token context window)
----
+
 
 ## 💡 Examples
 
