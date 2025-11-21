@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
+      url: https://pypi.org/p/gemini-cli-tool
     permissions:
       id-token: write
-    
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
@@ -20,5 +21,3 @@ jobs:
       - run: pip install build
       - run: python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1
-              with:
-                        api-token: ${{ secrets.PYPI_API_TOKEN }}
