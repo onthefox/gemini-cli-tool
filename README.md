@@ -1,6 +1,6 @@
 # 🚀 Gemini CLI Tool
 
-> Advanced AI-powered CLI tool for intelligent code analysis, generation, and optimization using Google's Gemini API
+> Advanced AI-powered CLI tool for intelligent code analysis, generation, and optimization using Gemini Code Agent (via AI Studio or API)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -123,6 +123,28 @@ docker run -e GEMINI_API_KEY=your_key gemini-cli-tool analyze file.py
 ---
 
 ## 🚀 Quick Start
+
+### Authentication Options
+
+Before you start, choose one of the following authentication methods:
+
+#### Option 1: Browser OAuth Login (Recommended - No API key needed)
+```bash
+gemini-cli  # Will prompt you to authenticate via browser
+# Your credentials will be cached locally at ~/.gemini/oauth_creds.json
+```
+
+#### Option 2: Gemini API Key
+```bash
+export GEMINI_API_KEY="your-api-key-here"
+```
+
+#### Option 3: Vertex AI Credentials
+```bash
+export GOOGLE_CLOUD_PROJECT="your-project-id"
+export GOOGLE_CLOUD_LOCATION="your-location"
+```
+
 
 ### 1. Set Your API Key
 
