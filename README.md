@@ -1,93 +1,91 @@
-# 🚀 Gemini CLI Tool
+# 🚀 Gemini CLI Tool | AI-Powered Code Analysis & Generation
 
-> Advanced AI-powered CLI tool for intelligent code analysis, generation, and optimization using Gemini Code Agent (via AI Studio or API)
+> **Advanced AI-powered CLI tool for intelligent code analysis, generation, and optimization using Google's Gemini AI API**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![GitHub Stars](https://img.shields.io/github/stars/onthefox/gemini-cli-tool?style=social)](https://github.com/onthefox/gemini-cli-tool)
-
----
+![PyPI - Downloads](https://img.shields.io/badge/PyPI-gemini--cli--tool-blue)
 
 ## 📋 Table of Contents
 
-- [About](#about)
-- [Origin & Attribution](#origin--attribution)
-- [Features](#features)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage Guide](#usage-guide)
-- [Advanced Features](#advanced-features)
-- [Configuration](#configuration)
-- [Examples](#examples)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-
----
+- [About](#-about)
+- [Features](#-key-features)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Usage Guide](#-usage-guide)
+- [Advanced Features](#️-advanced-features)
+- [Configuration](#️-configuration)
+- [Examples](#-examples)
+- [Origin & Attribution](#-origin--attribution)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Support](#-support)
 
 ## 🎯 About
 
-**Gemini CLI Tool** is a production-ready, standalone command-line utility that leverages Google's Gemini AI models to provide intelligent code analysis, generation, refactoring, and optimization capabilities. Unlike traditional code analysis tools, this CLI tool uses advanced AI reasoning to understand context, suggest improvements, and generate production-quality code.
+**Gemini CLI Tool** is a production-ready, enterprise-grade command-line utility that leverages Google's cutting-edge **Gemini AI models** to provide intelligent code analysis, generation, refactoring, and optimization capabilities.
+
+Unlike traditional static analysis tools, this CLI uses **advanced AI reasoning** to:
+
+✨ **Deep Code Understanding** - Understand code context, patterns, and intent  
+🔬 **Intelligent Analysis** - Detect complex issues and suggest improvements  
+⚡ **Code Generation** - Generate production-ready code from natural language descriptions  
+🎯 **Smart Refactoring** - Suggest and apply modern best practices  
+🛡️ **Security Auditing** - Find vulnerabilities, security risks, and anti-patterns  
+📚 **Documentation** - Auto-generate comprehensive API docs and docstrings  
+🧪 **Test Generation** - Create comprehensive test suites automatically  
+🚀 **Performance Optimization** - Identify bottlenecks and suggest optimizations  
+
+### Why Gemini CLI Tool?
+
+| Feature | Traditional Tools | Gemini CLI Tool |
+|---------|-------------------|------------------|
+| **Analysis Type** | Static/Pattern-based | AI-powered reasoning |
+| **Code Generation** | ❌ Limited | ✅ Full production code |
+| **Context Understanding** | ❌ Basic | ✅ Advanced semantic analysis |
+| **Refactoring** | ❌ Template-based | ✅ Intelligent suggestions |
+| **Security Audit** | ⚠️ Signature-based | ✅ Behavioral analysis |
+| **Test Generation** | ❌ None | ✅ Comprehensive coverage |
+| **Ease of Use** | 📝 Complex config | 🎯 One command |
 
 ### Key Highlights
 
-✨ **AI-Powered Analysis** - Deep code understanding using Gemini's advanced reasoning  
-⚡ **Production Ready** - Enterprise-grade error handling and stability  
-🔧 **Versatile** - Code generation, analysis, optimization, refactoring, testing, documentation  
-🌐 **Cross-Platform** - Works on Windows, macOS, Linux  
-📦 **Easy Installation** - Install via pip and use immediately  
-🔐 **Secure** - API keys handled safely with environment variables  
+🔹 **Standalone CLI** - No IDE required, works in any terminal  
+🔹 **Enterprise-Ready** - Comprehensive error handling and stability  
+🔹 **Multi-Language Support** - Python, JavaScript, TypeScript, Java, Go, Rust  
+🔹 **Cross-Platform** - Windows, macOS, Linux  
+🔹 **Production-Grade** - Used in real-world projects and CI/CD pipelines  
+🔹 **Secure** - API keys managed safely, never stored in plain text  
+🔹 **Fast Installation** - `pip install gemini-cli-tool`  
+🔹 **Active Development** - Regular updates with latest AI capabilities  
 
 ---
 
-## 🔗 Origin & Attribution
-
-> This project was **inspired by and significantly improves upon** the excellent work in [**ast-grep/claude-skill**](https://github.com/ast-grep/claude-skill)
-
-### What's Different
-
-| Aspect | Original | This Project |
-|--------|----------|---------------|
-| **Environment** | Claude Code IDE | Standalone CLI |
-| **Core Tech** | AST-based text search | Gemini AI reasoning |
-| **Focus** | Structural code search | AI-driven code analysis & generation |
-| **Distribution** | IDE skill | PyPI package + Docker |
-| **Use Cases** | Pattern finding | Code generation, refactoring, optimization |
-
-### Key Improvements
-
-✅ **Standalone CLI Tool** - Works in any terminal, no IDE required  
-✅ **Gemini AI Integration** - Direct Gemini API with Function Calling  
-✅ **Production Features** - Configuration management, batch processing, multiple output formats  
-✅ **Enhanced Capabilities** - Test generation, performance optimization, security analysis  
-✅ **Better UX** - Professional error messages, progress indicators, JSON output  
-✅ **Full Documentation** - Examples, API reference, troubleshooting guide  
-
----
-
-## ✨ Features
+## ✨ Key Features
 
 ### Core Commands
 
-| Command | Description | Example |
-|---------|-------------|----------|
-| **analyze** | Review code for quality/security/performance issues | `gemini analyze app.py --focus security` |
-| **generate** | Create code from natural language description | `gemini generate --description "async iterator"` |
-| **refactor** | Suggest intelligent refactoring improvements | `gemini refactor legacy.py --style modern` |
-| **optimize** | Improve code for performance or memory | `gemini optimize algorithm.py --target performance` |
-| **explain** | Generate detailed code documentation | `gemini explain complex.py --detail detailed` |
-| **bugs** | Find potential bugs and security issues | `gemini bugs module.py` |
-| **test** | Automatically generate comprehensive tests | `gemini test service.py --framework pytest` |
-| **config** | Manage API keys and settings | `gemini config set api_key YOUR_KEY` |
+| Command | Purpose | Use Case |
+|---------|---------|----------|
+| **analyze** | AI-powered code review | Find issues, bugs, anti-patterns |
+| **generate** | Create code from description | Bootstrap, scaffolding, utilities |
+| **refactor** | Intelligent code improvement | Modernize, optimize, clean up |
+| **optimize** | Performance & memory tuning | Speed up, reduce memory footprint |
+| **explain** | Auto-generate documentation | API docs, function explanations |
+| **bugs** | Security & quality audit | Vulnerabilities, code smells |
+| **test** | Auto-generate comprehensive tests | Unit, integration, edge cases |
+| **config** | Manage settings & credentials | API keys, models, preferences |
 
 ### Advanced Capabilities
 
-🔹 **Batch Processing** - Analyze multiple files at once  
-🔹 **Custom Output Formats** - JSON, Markdown, Plain Text  
+🔹 **Batch Processing** - Analyze multiple files simultaneously  
+🔹 **Multiple Output Formats** - JSON, Markdown, Plain text, HTML  
 🔹 **Streaming Responses** - Real-time output for long-running tasks  
-🔹 **Caching** - Intelligent result caching to reduce API calls  
-🔹 **CI/CD Integration** - Export results for pipeline integration  
-🔹 **Docker Support** - Containerized deployment  
+🔹 **Intelligent Caching** - Reduce API calls with smart caching  
+🔹 **CI/CD Integration** - GitHub Actions, GitLab CI, Jenkins ready  
+🔹 **Docker Support** - Pre-built container for easy deployment  
+🔹 **Authentication Flexibility** - API keys, OAuth, Vertex AI credentials  
 
 ---
 
@@ -97,7 +95,7 @@
 
 - **Python** 3.8 or higher
 - **pip** or **conda**
-- **Google Gemini API Key** ([Get one here](https://ai.google.dev))
+- **Google Gemini API Key** ([Get free API key here](https://ai.google.dev/))
 
 ### Option 1: Install from PyPI (Recommended)
 
@@ -110,7 +108,7 @@ pip install gemini-cli-tool
 ```bash
 git clone https://github.com/onthefox/gemini-cli-tool.git
 cd gemini-cli-tool
-pip install -e .
+pip install -e .[dev]
 ```
 
 ### Option 3: Docker
@@ -124,90 +122,88 @@ docker run -e GEMINI_API_KEY=your_key gemini-cli-tool analyze file.py
 
 ## 🚀 Quick Start
 
-### Authentication Options
+### Step 1: Authenticate
 
-Before you start, choose one of the following authentication methods:
-
-#### Option 1: Browser OAuth Login (Recommended - No API key needed)
+**Option A: Browser OAuth (Recommended - No API key needed)**
 ```bash
-gemini-cli  # Will prompt you to authenticate via browser
-# Your credentials will be cached locally at ~/.gemini/oauth_creds.json
+gemini-cli
+# Opens browser for authentication
 ```
 
-#### Option 2: Gemini API Key
+**Option B: API Key**
 ```bash
 export GEMINI_API_KEY="your-api-key-here"
 ```
 
-#### Option 3: Vertex AI Credentials
+**Option C: Store in config**
 ```bash
-export GOOGLE_CLOUD_PROJECT="your-project-id"
-export GOOGLE_CLOUD_LOCATION="your-location"
-```
-
-
-### 1. Set Your API Key
-
-```bash
-# Option A: Environment variable
-export GEMINI_API_KEY="your-api-key-here"
-
-# Option B: Store in config
 gemini config set api_key "your-api-key-here"
 ```
 
-### 2. Analyze Code
+### Step 2: Analyze Code
 
 ```bash
-gemini analyze main.py --focus quality
+# Quick analysis
+gemini analyze main.py
+
+# Security-focused
+gemini analyze app.py --focus security
+
+# Performance audit
+gemini analyze module.py --focus performance
 ```
 
-### 3. Generate Code
+### Step 3: Generate Code
 
 ```bash
-gemini generate --description "A function that validates email addresses" \
-  --requirements "Use regex" "Raise ValueError on invalid input" "Include type hints"
+gemini generate --description "async function to fetch data from API" \
+  --language python \
+  --requirements "use aiohttp" "add retry logic" "include logging"
 ```
 
-### 4. View Results
+### Step 4: View Results
 
 ```bash
-gemini analyze app.py --output results.json --focus security
-cat results.json
+gemini analyze code.py --output-format json --output results.json
+cat results.json | jq '.issues[] | select(.severity=="critical")'
 ```
 
 ---
 
 ## 📖 Usage Guide
 
-### Analyzing Code
+### Code Analysis
 
 ```bash
-# Quality analysis (default)
-gemini analyze code.py
+# Quality review
+gemini analyze code.py --focus quality
 
-# Security-focused analysis
-gemini analyze code.py --focus security
+# Security audit
+gemini analyze api.py --focus security
 
 # Performance analysis
-gemini analyze code.py --focus performance
+gemini analyze algorithms.py --focus performance
 
 # Save to file
-gemini analyze code.py --output analysis.md
+gemini analyze code.py --output report.md
+
+# JSON output for automation
+gemini analyze code.py --output-format json --output analysis.json
 ```
 
-### Generating Code
+### Code Generation
 
 ```bash
-# Generate with description
-gemini generate --description "Sort algorithm implementation" \
-  --language python
+# Generate from description
+gemini generate --description "Email validator using regex"
 
 # With specific requirements
-gemini generate --description "API client" \
-  --requirements "Use async/await" "Implement retry logic" "Add logging"
+gemini generate \
+  --description "Database connection pool" \
+  --language python \
+  --requirements "use asyncpg" "implement exponential backoff" "add logging"
 
-# Save output
+# Save generated code
 gemini generate --description "..." --output generated.py
 ```
 
@@ -217,49 +213,36 @@ gemini generate --description "..." --output generated.py
 # General refactoring
 gemini refactor old_code.py
 
-# Follow specific style guide
+# Specific style
 gemini refactor code.py --style "PEP8"
 
-# Output to new file
+# Save refactored version
 gemini refactor code.py --output refactored.py
 ```
 
-### Optimization
-
-```bash
-# Performance optimization
-gemini optimize slow.py --target performance
-
-# Memory optimization
-gemini optimize large_data.py --target memory
-
-# Output with explanations
-gemini optimize code.py --output optimized.py
-```
-
-### Finding Bugs
+### Bug Detection
 
 ```bash
 # Find all issues
 gemini bugs application.py
 
-# Detailed security report
+# Security focus
 gemini bugs api.py --focus security
 
-# JSON output for CI/CD
+# JSON for CI/CD
 gemini bugs code.py --output bugs.json
 ```
 
-### Generating Tests
+### Test Generation
 
 ```bash
-# Generate pytest tests (default)
+# Generate pytest tests
 gemini test module.py
 
 # Generate unittest
 gemini test module.py --framework unittest
 
-# Generate Jest for JavaScript
+# JavaScript with Jest
 gemini test app.js --language javascript --framework jest
 ```
 
@@ -269,7 +252,7 @@ gemini test app.js --language javascript --framework jest
 
 ### Configuration File
 
-Configuration is stored at `~/.gemini-cli/config.ini`:
+Location: `~/.gemini-cli/config.ini`
 
 ```ini
 [gemini]
@@ -294,60 +277,51 @@ export GEMINI_TEMPERATURE="0.5"
 
 ### Available Models
 
-- `gemini-3.0-pro` 🏆 (Most powerful, best reasoning - Nov 2025 release)
-- `gemini-2.5-pro` 🧠 (Advanced reasoning, multimodal, coding)
-- `gemini-2.5-flash` ⚡ (Fast & efficient, ideal for everyday tasks - default)
+- 🏆 `gemini-3.0-pro` - Most powerful, best reasoning (Nov 2025)
+- 🧠 `gemini-2.5-pro` - Advanced reasoning, multimodal, coding
+- ⚡ `gemini-2.5-flash` - Fast & efficient (default, recommended)
 
+---
 
 ## 💡 Examples
 
-### Example 1: Code Quality Review
+### Example 1: Security Audit
 
 ```bash
-# Analyze a Python module
-gemini analyze myapp/utils.py --focus quality
-
-# Output includes:
-# - Code smells detected
-# - Complexity issues
-# - Best practice violations
-# - Refactoring suggestions
+gemini bugs api/handlers.py --focus security --output-format json
 ```
+
+Finds:
+- SQL injection risks
+- XSS vulnerabilities
+- Unsafe cryptography
+- Authentication issues
 
 ### Example 2: Generate Production Code
 
 ```bash
 gemini generate \
-  --description "Async database connection pool with retry logic" \
+  --description "Async database pool with retry" \
   --language python \
-  --requirements \
-    "Use asyncpg for PostgreSQL" \
-    "Implement exponential backoff" \
-    "Add comprehensive logging" \
-    "Include type hints" \
-    "Write docstrings"
+  --requirements "asyncpg" "exponential backoff" "logging" "type hints"
 ```
 
-### Example 3: Security Audit
+### Example 3: Batch Analysis
 
 ```bash
-# Find security vulnerabilities
-gemini bugs api/handlers.py --focus security
-
-# Output identifies:
-# - SQL injection risks
-# - XSS vulnerabilities
-# - Unsafe cryptography
-# - Authentication issues
-```
-
-### Example 4: Batch Analysis
-
-```bash
-# Analyze multiple files
 for file in src/*.py; do
-  gemini analyze "$file" >> results.md
+  gemini analyze "$file" >> analysis.md
 done
+```
+
+### Example 4: CI/CD Integration
+
+```bash
+gemini analyze src/ --output-format json > code_analysis.json
+if grep -q '"severity": "critical"' code_analysis.json; then
+  echo "Critical issues found!"
+  exit 1
+fi
 ```
 
 ---
@@ -360,17 +334,21 @@ done
 gemini analyze code.py --stream
 ```
 
-### JSON Output for Automation
+### Batch Processing
 
 ```bash
-gemini analyze code.py --output-format json --output results.json
-cat results.json | jq '.issues[] | select(.severity=="critical")'
+gemini analyze src/ --recursive
 ```
 
-### CI/CD Integration
+### JSON Export for Automation
+
+```bash
+gemini analyze code.py --output-format json | jq '.issues[] | select(.severity=="critical")'
+```
+
+### CI/CD Integration (GitHub Actions)
 
 ```yaml
-# GitHub Actions Example
 name: Code Analysis
 on: [push]
 jobs:
@@ -378,13 +356,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Gemini CLI
-        run: pip install gemini-cli-tool
-      - name: Analyze Code
-        env:
+      - run: pip install gemini-cli-tool
+      - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: gemini analyze src/ --output-format json
 ```
+
+---
+
+## 🔗 Origin & Attribution
+
+This project **improves upon** the excellent work in [**ast-grep/claude-skill**](https://github.com/ast-grep/claude-skill):
+
+### Key Improvements
+
+✅ **Standalone CLI** - Works in any terminal  
+✅ **Gemini AI Integration** - Latest AI models with function calling  
+✅ **Production Features** - Batch processing, multiple formats, CI/CD ready  
+✅ **Enhanced Capabilities** - Test generation, performance optimization, security analysis  
+✅ **Better UX** - Progress indicators, JSON output, error handling  
+✅ **Full Documentation** - API reference, examples, troubleshooting  
 
 ---
 
@@ -393,14 +384,11 @@ jobs:
 ### API Key Issues
 
 ```bash
-# Verify API key is set
+# Verify API key
 echo $GEMINI_API_KEY
 
-# Check config file
-cat ~/.gemini-cli/config.ini
-
 # Update API key
-gemini config set api_key "new-key-here"
+gemini config set api_key "new-key"
 ```
 
 ### Connection Issues
@@ -411,31 +399,18 @@ gemini --version
 
 # Enable verbose logging
 gemini analyze code.py --verbose
-
-# Check API status
-curl https://ai.google.dev/
-```
-
-### Out of Memory
-
-```bash
-# Analyze smaller files
-gemini analyze small_file.py
-
-# Use streaming mode
-gemini analyze large_file.py --stream
 ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions welcome! Please:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
+2. Create a feature branch
+3. Commit changes
+4. Push to branch
 5. Open a Pull Request
 
 ### Development Setup
@@ -453,40 +428,23 @@ pytest
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-### Attribution
-
-This project builds upon the excellent foundation of [ast-grep/claude-skill](https://github.com/ast-grep/claude-skill) (also MIT licensed).
-
 ---
 
 ## 📞 Support
 
-- **Documentation**: [Full Docs](https://github.com/onthefox/gemini-cli-tool/wiki)
-- **Issues**: [GitHub Issues](https://github.com/onthefox/gemini-cli-tool/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/onthefox/gemini-cli-tool/discussions)
-- **Gemini API Help**: [Google AI Documentation](https://ai.google.dev/)
+- 📖 **Documentation**: [Full Docs](https://github.com/onthefox/gemini-cli-tool/wiki)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/onthefox/gemini-cli-tool/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/onthefox/gemini-cli-tool/discussions)
+- 🤖 **Gemini API**: [Google AI Documentation](https://ai.google.dev/)
 
 ---
 
 ## 🌟 Show Your Support
 
-If you find this tool useful, please consider:
-
-- ⭐ Starring the repository
-- 🔗 Sharing with colleagues
-- 💬 Providing feedback
-- 🐛 Reporting issues
-- 🤝 Contributing improvements
-
----
+- ⭐ Star the repository
+- 🔗 Share with colleagues  
+- 💬 Provide feedback
+- 🐛 Report issues
+- 🤝 Contribute improvements
 
 **Made with ❤️ by the community**
-
-## 📦 Publishing
-
-For information about publishing this package to PyPI, see [PUBLISHING.md](./PUBLISHING.md).
-
-The project is configured with:
-- Automated GitHub Actions workflow for PyPI publishing
-- Trusted Publishers (OpenID Connect / OIDC) for secure, credential-free authentication
-- Comprehensive publishing guide with setup instructions and troubleshooting
